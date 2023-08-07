@@ -46,7 +46,7 @@ func main() {
 
 	service.Init()
 
-	svcService := route.NewRouteService("go.micro.service.svc", service.Client())
+	svcService := route.NewRouteService("go.micro.service.route", service.Client())
 
 	err := route_api.RegisterRouteApiHandler(service.Server(), &handler2.RouteApi{
 		RouteService: svcService,

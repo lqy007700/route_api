@@ -1,4 +1,4 @@
 FROM alpine
-ADD svc_api /svc_api
+ADD route_api /route_api
 
-ENTRYPOINT [ "/svc_api" ]
+ENTRYPOINT [ "/route_api" ]
